@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LearnRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+	<header class="cd-header">
+		<h1>Project Tracker</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">Companies</a></li>
+					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Projects</a></li>
+					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Reports</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div>
+	
+		<section class="cd-gallery">
+		    <div class="body-container">
+    			<div>
+      				<%= yield %>
+    			</div>
+    				<p> ajkdfchsadkj</p>
+  				</div>
+			
+			<div class="menu-container">
+    			
+    				<p>Navigate</p>
+    				<h5>Home</h5>
+    				<h5>ROR Projects</h5>
+    				<h5>About</h5>
+    				<h5>Contact</h5>
+    				
+    				
+    				 
+  				</div>
+
+			
+		</section> <!-- cd-gallery -->
+
+
+
+
+	</main>
+	
+
+</body>
+</html>
